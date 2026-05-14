@@ -1,5 +1,5 @@
 # Print a simple greeting
-print("Hello, World!")
+print("Hello, World My Name is prateek!")
 
 # Getting user input
 name = input("Enter your name: ")
