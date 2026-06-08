@@ -6,7 +6,7 @@ def guess_the_number():
     attempts = 0
     
     print("Welcome to the Number Guessing Game!")
-    print("I have chosen a number between 1 and 100. Can you guess this branch is MAIN branch?")
+    print("I have chosen a number between 1 and 100. Can you guess this branch is FEATURE/Main branch?")
     
     # Loop until the player guesses correctly
     while True:
@@ -19,6 +19,8 @@ def guess_the_number():
             if user_guess < secret_number:
                 print("Too low! Try again.")
             elif user_guess > secret_number:
+                print("Too high! Try again.")
+            elif user_guess == secret_number:
                 print("Too high! Try again.")
             else:
                 print(f"Congratulations! You found the number in {attempts} attempts!")
