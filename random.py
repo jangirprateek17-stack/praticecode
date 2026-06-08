@@ -20,6 +20,8 @@ def guess_the_number():
                 print("Too low! Try again.")
             elif user_guess > secret_number:
                 print("Too high! Try again.")
+            elif user_guess == secret_number:
+                print("Too high! Try again.")
             else:
                 print(f"Congratulations! You found the number in {attempts} attempts!")
                 break # Exit the loop
