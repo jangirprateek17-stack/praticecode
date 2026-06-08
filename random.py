@@ -25,7 +25,9 @@ def guess_the_number():
             else:
                 print(f"Congratulations! You found the number in {attempts} attempts!")
                 break # Exit the loop
-            
+                
+        except ValueError:
+            print("Invalid input. Please enter a valid whole number.")
 
 # Run the game
 if __name__ == "__main__":
